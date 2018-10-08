@@ -30,14 +30,21 @@ class Main
          *          call this array ar1.  Print it out below.
          */
         System.out.println("*** PRINTING ar1 *");
-        
-                
+        int[] ar1 = new int[n];
+      /*  
+        for (int i=0; i<ar1.length;i++) {
+        ar1[i]=i;
+    }
+        for (int i=0; i<ar1.length; i++) 
+        System.out.println("ar[" + i + "] = " +ar1[i]);
+    */
         /*
          * Task 2.  Create a new array called ar2.
          *          Copy the elements of ar1 into ar2.
          */
-        
-        
+        int[] ar2=new int[n];
+        ar2=ar1;
+        System.out.println(ar2);
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
@@ -165,6 +172,7 @@ class Main
           */
          
          /*
+          * Task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
           * fb[0]=1
