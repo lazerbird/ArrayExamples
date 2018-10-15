@@ -140,8 +140,9 @@ class Main
         System.out.println("** Task 7*");
         for (int i=0; i<ar1.length; i++) {
             if (ar1[i]%2==0)
-                
-            System.out.println(ar1[i]);
+                System.out.println(ar1[i]);
+            else
+                System.out.println(ar1[i]*10);
         }
          /*
           * Task 8
@@ -153,26 +154,66 @@ class Main
           *    ar2[2]=2
           *    ar2[3]=3  ->  ar2odds[1]=3
           */
-         
+        System.out.println("*** Task 8*");
+        int[] ar2odds = new int[n];
+        for (int i=0 ; i<ar2.length ; i++)
+        {
+            ar2odds[i] = ar2[i];
+        }
+        for (int i=0; i<ar2.length; i++) {
+            if (ar2[i]%2==1)
+                System.out.println("ar2odds[" +i+ "] = "+ar2odds[i]);
+            else {  
+                System.out.println("ar2["+i+"] = "+ar2[i]);
+            }
+        }
         /*
          * Task 9. In the array ar2, count how many odd numbers you
          * have.  Then create an ew array called ar4.  Copy just the odd
          * numbers from ar1 into ar4.  Print ar4
          */
-        
+        System.out.println("*** Task 9*");
+        int count=0;
+        for (int i=0; i<ar2.length; i++) {
+           if (ar2[i]%2==1)
+            count++;
+        }
+        System.out.println("count: "+count);
+        int[] ar4=new int[ar2.length];
+        for (int i=0; i<ar2.length; i++) {
+            ar4[i]=ar1[i];
+            System.out.println("ar4["+i+"] = "+ar4[i]);
+            }
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
          */
+        System.out.println("*** Task 10*");
+        int value2=ar4[ar4.length-1];
+        for (int i=ar4.length-2; i>=0; i--) {
+            ar4[i+1]=ar4[i];
+        }
+        ar4[0]=value2;
+        for (int i=0; i<ar4.length; i++) 
+            System.out.println("ar4[" + i + "] = " + ar4[i]);
         
-       
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        
-        
+        System.out.println("***Task 11*");
+        int value3;
+        for (int i=0; i<ar2.length/2; i++) {
+            value3=ar2[i];
+            ar2[i]=ar2[ar2.length-1-i];
+            ar2[ar2.length-1-i]=value3;
+        }
+        for (int i=0; i<ar2.length; i++)
+            System.out.println("ar2[" + i + "] = " + ar2[i]);
+        value3=ar2[0];
+        ar2[0]=ar2[ar2.length-1];
+        ar2[ar2.length-1]=value3;
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
@@ -196,7 +237,7 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        
+        int[] ar5
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
