@@ -237,7 +237,7 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        int[] ar5
+        int[] ar5;
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
