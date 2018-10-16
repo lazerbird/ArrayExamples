@@ -139,11 +139,11 @@ class Main
          */
         System.out.println("** Task 7*");
         for (int i=0; i<ar1.length; i++) {
-            if (ar1[i]%2==0)
-                System.out.println(ar1[i]);
-            else
-                System.out.println(ar1[i]*10);
+            if (ar1[i]%2==1)
+                ar1[i]=ar1[i]*10;
         }
+        for (int i=0; i<ar1.length; i++) 
+            System.out.println(ar1[i]);
          /*
           * Task 8
           *    Create an array called ar2odds
@@ -235,7 +235,8 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
-        String[] ar5=new String[16];
+        System.out.println("*** Task 12 *");
+        /*String[] ar5=new String[16];
         ar5[0] = "Four";
         ar5[1] = "score"; 
         ar5[2]="and"; 
@@ -263,7 +264,7 @@ class Main
             if (ar5[i].length()>5)
                 counter++;
         }
-        System.out.println("counter="+counter);
+        System.out.println("counter="+counter); */
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
@@ -278,8 +279,15 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
-        
-         /*
+        System.out.println("***Task 13*");
+        String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
+        for (int i=0; i<monsterArray.length; i++)
+            System.out.println(monsterArray[i]);
+        for (int i=0; i<monsterArray.length; i++) {
+            if (monsterArray[i].contains("a") || monsterArray[i].contains("o") || monsterArray[i].contains("e") || monsterArray[i].contains("i")  || monsterArray[i].contains("u"))
+                System.out.println("has vowel: "+monsterArray[i]);
+        }
+        /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
           * Create an array of the indices of arx when the item is
@@ -294,7 +302,20 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
-         int[] arx=new int[
+         System.out.println("***Task 14*");
+         int[] arx=new int[6];
+         int[] arindex=new int[2];
+         int a=0;
+         for (int i=94; i<=99; i++) {
+            arx[a]= i;
+            if (arx[a]%3==0)
+                arindex[a]=arx[a];
+            a++;
+        }
+         for (int i=0; i<arx.length; i++)
+            System.out.println("arx["+i+"] ="+ arx[i]);
+         for (int i=0; i<arindex.length; i++)
+            System.out.println("arindex["+i+"] = "+arindex[i]);
          /*
           * Task 15
           * Create an arrary called "fb" and calculate the
