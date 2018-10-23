@@ -16,7 +16,7 @@ class Main
      
         
         /*
-         * SET UP
+         * SET UP                                                                                                                                   
          * We are going to ask the user to input an integer 
          * and we will call it
                               n
@@ -172,19 +172,23 @@ class Main
          */
         System.out.println("*** Task 9*");
         int l4=0;
-        for (int i=0; i<ar2.length; i++) {
-           if (ar2[i]%2==1)
-            l4++;
-        }
-        int[] ar4=new int[l4];
-        k=0;
-        for (int i=0; i<ar2.length; i++) {
-            if (ar2[i]%2==1)
-                ar4[k]=ar2[i];
-            k++;
-            }
-        for (int i=0; i<ar4.length; i++)
-            System.out.println("ar4["+i+"] = "+ar4[i]);
+         for (int i=0 ; i<ar2.length ; i++)
+         {
+             if ( ar2[i]%2==1)
+                 l4++;
+         } 
+         int[] ar4 = new int[l4];
+         k=0;
+         for (int i=0 ; i<ar2.length ; i++)
+         {
+             if (ar2[i]%2==1)
+             {
+                 ar4[k]=ar2[i];
+                 k++;
+             }
+          }           
+           for (int i=0 ; i<k ; i++)
+               System.out.println(ar4[i]);
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
@@ -193,8 +197,8 @@ class Main
          */
         System.out.println("*** Task 10*");
         int value2=ar4[ar4.length-1];
-        for (int i=ar4.length-2; i>=0; i--) {
-            ar4[i+1]=ar4[i];
+        for (int i=ar4.length-1; i>=0; i--) {
+            ar4[i-1]=ar4[i];
         }
         ar4[0]=value2;
         for (int i=0; i<ar4.length; i++) 
