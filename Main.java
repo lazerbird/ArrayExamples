@@ -197,8 +197,8 @@ class Main
          */
         System.out.println("*** Task 10*");
         int value2=ar4[ar4.length-1];
-        for (int i=ar4.length-1; i>=0; i--) {
-            ar4[i-1]=ar4[i];
+        for (int i=ar4.length-2; i>=0; i--) {
+            ar4[i+1]=ar4[i];
         }
         ar4[0]=value2;
         for (int i=0; i<ar4.length; i++) 
