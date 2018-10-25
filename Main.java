@@ -190,8 +190,8 @@ class Main
          */
         System.out.println("*** Task 10*");
         int value2=ar4[ar4.length-1];
-        for (int i=ar4.length-2; i>=0; i--) {
-            ar4[i+1]=ar4[i];
+        for (int i=ar4.length-1; i>0; i--) {
+            ar4[i]=ar4[i-1];
         }
         ar4[0]=value2;
         for (int i=0; i<ar4.length; i++) 
@@ -301,7 +301,7 @@ class Main
           *      
           *      So arindex[0]=2
           *         arindex[1]=5
-          */
+          */ /*
          System.out.println("***Task 14*");
          int[] arx=new int[6];
          int[] arindex=new int[2];
@@ -316,7 +316,7 @@ class Main
             System.out.println("arx["+i+"] ="+ arx[i]);
          for (int i=0; i<arindex.length; i++)
             System.out.println("arindex["+i+"] = "+arindex[i]);
-         /*
+         */ /* 
           * Task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
