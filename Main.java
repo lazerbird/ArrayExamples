@@ -16,7 +16,7 @@ class Main
      
         
         /*
-         * SET UP
+         * SET UP                                                                                                                                   
          * We are going to ask the user to input an integer 
          * and we will call it
                               n
@@ -171,17 +171,24 @@ class Main
          * numbers from ar1 into ar4.  Print ar4
          */
         System.out.println("*** Task 9*");
-        int count=0;
-        for (int i=0; i<ar2.length; i++) {
-           if (ar2[i]%2==1)
-            count++;
-        }
-        System.out.println("count: "+count);
-        int[] ar4=new int[ar2.length];
-        for (int i=0; i<ar2.length; i++) {
-            ar4[i]=ar1[i];
-            System.out.println("ar4["+i+"] = "+ar4[i]);
-            }
+        int l4=0;
+         for (int i=0 ; i<ar2.length ; i++)
+         {
+             if ( ar2[i]%2==1)
+                 l4++;
+         } 
+         int[] ar4 = new int[l4];
+         k=0;
+         for (int i=0 ; i<ar2.length ; i++)
+         {
+             if (ar2[i]%2==1)
+             {
+                 ar4[k]=ar2[i];
+                 k++;
+             }
+          }           
+           for (int i=0 ; i<k ; i++)
+               System.out.println(ar4[i]);
         /*
          * Task 10.  Shift the elements of ar4 right by 1
          * For example
@@ -311,12 +318,16 @@ class Main
             if (arx[a]%3==0)
                 arindex[a]=arx[a];
             a++;
-        }
+        } 
          for (int i=0; i<arx.length; i++)
             System.out.println("arx["+i+"] ="+ arx[i]);
          for (int i=0; i<arindex.length; i++)
             System.out.println("arindex["+i+"] = "+arindex[i]);
+<<<<<<< HEAD
          */ /* 
+=======
+         */ /*
+>>>>>>> 8380375b0c9549f64557618d03e272ae82d9da38
           * Task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
