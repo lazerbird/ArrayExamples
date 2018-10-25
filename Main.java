@@ -12,14 +12,12 @@ class Main
     
     public static void main( String[] args)
     {
-     
-     //xaduahsdknalsd
         
         /*
          * SET UP                                                                                                                                   
          * We are going to ask the user to input an integer 
          * and we will call it
-                              n
+                        dfgo;erf;oejrf;ejf      n
          */
         Scanner s = new Scanner(System.in);
         System.out.print(" Please type in an integer :");
