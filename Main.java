@@ -17,7 +17,7 @@ class Main
          * SET UP                                                                                                                                   
          * We are going to ask the user to input an integer 
          * and we will call it
-                        dfgo;erf;oejrf;ejf      n
+                        hi      n
          */
         Scanner s = new Scanner(System.in);
         System.out.print(" Please type in an integer :");
