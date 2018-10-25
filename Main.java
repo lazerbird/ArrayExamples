@@ -17,7 +17,7 @@ class Main
          * SET UP                                                                                                                                   
          * We are going to ask the user to input an integer 
          * and we will call it
-                        hi      n
+                             n
          */
         Scanner s = new Scanner(System.in);
         System.out.print(" Please type in an integer :");
@@ -241,7 +241,7 @@ class Main
          *  Count how many words have more than 5 letters.
          */
         System.out.println("*** Task 12 *");
-        /*String[] ar5=new String[16];
+        String[] ar5=new String[16];
         ar5[0] = "Four";
         ar5[1] = "score"; 
         ar5[2]="and"; 
@@ -260,7 +260,7 @@ class Main
         ar5[3]="nation";
         int[] ar6=new int[16];
         int counter=0;
-        String l; int k;
+        String l; 
         for (int i=0; i<ar5.length; i++) {
             l = ar5[i];
             k = l.length();
@@ -269,7 +269,7 @@ class Main
             if (ar5[i].length()>5)
                 counter++;
         }
-        System.out.println("counter="+counter); */
+        System.out.println("counter="+counter); 
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
