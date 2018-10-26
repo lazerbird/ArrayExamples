@@ -246,28 +246,28 @@ class Main
         ar5[1] = "score"; 
         ar5[2]="and"; 
         ar5[3]="seven"; 
-        ar5[3]="years"; 
-        ar5[3]="ago"; 
-        ar5[3]="our"; 
-        ar5[3]="fathers"; 
-        ar5[3]="brought"; 
-        ar5[3]="forth"; 
-        ar5[3]="on";
-        ar5[3]="this"; 
-        ar5[3]="continent"; 
-        ar5[3]="a"; 
-        ar5[3]="new"; 
-        ar5[3]="nation";
+        ar5[4]="years"; 
+        ar5[5]="ago"; 
+        ar5[6]="our"; 
+        ar5[7]="fathers"; 
+        ar5[8]="brought"; 
+        ar5[9]="forth"; 
+        ar5[10]="on";
+        ar5[11]="this"; 
+        ar5[12]="continent"; 
+        ar5[13]="a"; 
+        ar5[14]="new"; 
+        ar5[15]="nation";
         int[] ar6=new int[16];
-        int counter=0;
-        String l; 
+        int counter=0; 
         for (int i=0; i<ar5.length; i++) {
-            l = ar5[i];
-            k = l.length();
+            k = ar5[i].length();
             ar6[i]=k;
-            System.out.println(ar6[i]);
             if (ar5[i].length()>5)
                 counter++;
+        }
+        for (int i=0; i<ar6.length; i++) {
+            System.out.println("ar6["+i+"]="+ar6[i]);
         }
         System.out.println("counter="+counter); 
         /*
@@ -289,9 +289,11 @@ class Main
         for (int i=0; i<monsterArray.length; i++)
             System.out.println(monsterArray[i]);
         for (int i=0; i<monsterArray.length; i++) {
-            if (monsterArray[i].contains("a") || monsterArray[i].contains("o") || monsterArray[i].contains("e") || monsterArray[i].contains("i")  || monsterArray[i].contains("u"))
+            if (monsterArray[i].charAt(0)=='E')//|| monsterArray[i].charAt(0)='e' || monsterArray[i].charAt(0)='i' || monsterArray[i].charAt(0)='o' || monsterArray[i].charAt(0)='u')
                 System.out.println("has vowel: "+monsterArray[i]);
-        }
+            if (monsterArray[i].charAt(0)=='O') 
+                System.out.println("has vowel: "+monsterArray[i]);
+            }
         /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -306,26 +308,26 @@ class Main
           *      
           *      So arindex[0]=2
           *         arindex[1]=5
-          */ /*
+          */ 
          System.out.println("***Task 14*");
+         int num=0;
          int[] arx=new int[6];
-         int[] arindex=new int[2];
+         int[] arindex=new int[num];
          int a=0;
          for (int i=94; i<=99; i++) {
-            arx[a]= i;
-            if (arx[a]%3==0)
+             arx[a]=i;
+            if (arx[a]%3==0) {
                 arindex[a]=arx[a];
+                num++;
+                }
             a++;
         } 
          for (int i=0; i<arx.length; i++)
             System.out.println("arx["+i+"] ="+ arx[i]);
          for (int i=0; i<arindex.length; i++)
             System.out.println("arindex["+i+"] = "+arindex[i]);
-<<<<<<< HEAD
-         */ /* 
-=======
-         */ /*
->>>>>>> 8380375b0c9549f64557618d03e272ae82d9da38
+          
+          /*
           * Task 15
           * Create an arrary called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
