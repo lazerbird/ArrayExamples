@@ -289,7 +289,7 @@ class Main
         for (int i=0; i<monsterArray.length; i++)
             System.out.println(monsterArray[i]);
         for (int i=0; i<monsterArray.length; i++) {
-            if (monsterArray[i].charAt(0)=='E')//|| monsterArray[i].charAt(0)='e' || monsterArray[i].charAt(0)='i' || monsterArray[i].charAt(0)='o' || monsterArray[i].charAt(0)='u')
+            if (monsterArray[i].charAt(0)=='E')
                 System.out.println("has vowel: "+monsterArray[i]);
             if (monsterArray[i].charAt(0)=='O') 
                 System.out.println("has vowel: "+monsterArray[i]);
@@ -311,19 +311,27 @@ class Main
           */ 
          System.out.println("***Task 14*");
          int num=0;
-         int[] arx=new int[6];
-         int[] arindex=new int[num];
-         int a=0;
-         for (int i=94; i<=99; i++) {
-             arx[a]=i;
-            if (arx[a]%3==0) {
-                arindex[a]=arx[a];
-                num++;
-                }
+         int[] arx=new int[92];
+         int a=3;
+         for (int i=0; i<arx.length; i++) {
+            arx[i]=a;
             a++;
-        } 
+            }
+        for (int i=0; i<arx.length; i++) {
+            if (arx[i]%3==0) {
+                num++;
+            }
+        }
+        int[] arindex=new int[num];
+        int m=0;
+        for (int i=0; i<arx.length; i++) {
+            if (arx[i]%3==0) {
+                arindex[m]=i;
+                m++;
+                }
+            }
          for (int i=0; i<arx.length; i++)
-            System.out.println("arx["+i+"] ="+ arx[i]);
+            System.out.println("arx["+i+"] = "+ arx[i]);
          for (int i=0; i<arindex.length; i++)
             System.out.println("arindex["+i+"] = "+arindex[i]);
           
