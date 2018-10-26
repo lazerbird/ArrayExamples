@@ -286,14 +286,19 @@ class Main
          */
         System.out.println("***Task 13*");
         String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
+        //Printing
         for (int i=0; i<monsterArray.length; i++)
             System.out.println(monsterArray[i]);
+        //Find vowels
         for (int i=0; i<monsterArray.length; i++) {
-            if (monsterArray[i].charAt(0)=='E')
-                System.out.println("has vowel: "+monsterArray[i]);
-            if (monsterArray[i].charAt(0)=='O') 
+            if (Character.toLowerCase(monsterArray[i].charAt(0))=='a' ||  
+                Character.toLowerCase(monsterArray[i].charAt(0))=='e' || 
+                    Character.toLowerCase(monsterArray[i].charAt(0))=='i' || 
+                        Character.toLowerCase(monsterArray[i].charAt(0))=='o' || 
+                            Character.toLowerCase(monsterArray[i].charAt(0))=='u') {
                 System.out.println("has vowel: "+monsterArray[i]);
             }
+        }
         /*
           * Task 14
           * Create an array of integers from 3 to 94 and call it arx
@@ -312,17 +317,19 @@ class Main
          System.out.println("***Task 14*");
          int num=0;
          int[] arx=new int[92];
+         //Filling arx from 3-94
          int a=3;
          for (int i=0; i<arx.length; i++) {
             arx[i]=a;
             a++;
             }
+        //Finding total number divisible by 3
         for (int i=0; i<arx.length; i++) {
-            if (arx[i]%3==0) {
+            if (arx[i]%3==0) 
                 num++;
-            }
         }
         int[] arindex=new int[num];
+        //Filling arindex with index numbers divisible by 3
         int m=0;
         for (int i=0; i<arx.length; i++) {
             if (arx[i]%3==0) {
@@ -330,6 +337,7 @@ class Main
                 m++;
                 }
             }
+         //Printing
          for (int i=0; i<arx.length; i++)
             System.out.println("arx["+i+"] = "+ arx[i]);
          for (int i=0; i<arindex.length; i++)
