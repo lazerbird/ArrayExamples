@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class Main
+public class Main
 {
     /*
      * This one will have public static void main
