@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class Main
+public class Main
 {
     /*
      * This one will have public static void main
@@ -214,9 +214,7 @@ class Main
         }
         for (int i=0; i<ar2.length; i++)
             System.out.println("ar2[" + i + "] = " + ar2[i]);
-        value3=ar2[0];
-        ar2[0]=ar2[ar2.length-1];
-        ar2[ar2.length-1]=value3;
+
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
@@ -261,15 +259,18 @@ class Main
         int[] ar6=new int[16];
         int counter=0; 
         for (int i=0; i<ar5.length; i++) {
-            k = ar5[i].length();
-            ar6[i]=k;
+            //Setting ar6[[i] to the length of ar5[i]
+            ar6[i]=ar5[i].length();
+            //counting how many letters with more than 5
             if (ar5[i].length()>5)
                 counter++;
         }
+        //Printing
         for (int i=0; i<ar6.length; i++) {
             System.out.println("ar6["+i+"]="+ar6[i]);
         }
         System.out.println("counter="+counter); 
+        
         /*
          * Task 13
          * Create an array called monsterArray of 5 Monsters.
@@ -286,7 +287,7 @@ class Main
          */
         System.out.println("***Task 13*");
         String[] monsterArray={"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
-        //Printing
+        //Printing monsterArray
         for (int i=0; i<monsterArray.length; i++)
             System.out.println(monsterArray[i]);
         //Find vowels
@@ -315,19 +316,17 @@ class Main
           *         arindex[1]=5
           */ 
          System.out.println("***Task 14*");
-         int num=0;
          int[] arx=new int[92];
-         //Filling arx from 3-94
          int a=3;
+         int num=0;
+         //Filling arx from 3-94
          for (int i=0; i<arx.length; i++) {
             arx[i]=a;
             a++;
-            }
-        //Finding total number divisible by 3
-        for (int i=0; i<arx.length; i++) {
+            //Finding total number divisible by 3
             if (arx[i]%3==0) 
                 num++;
-        }
+            }
         int[] arindex=new int[num];
         //Filling arindex with index numbers divisible by 3
         int m=0;
@@ -345,7 +344,7 @@ class Main
           
           /*
           * Task 15
-          * Create an arrary called "fb" and calculate the
+          * Create an array called "fb" and calculate the
           * first 10 fibonacci sequence.  You start with
           * fb[0]=1
           * fb[1]=1
@@ -355,11 +354,14 @@ class Main
           */
          System.out.println("***Task 15*");
           int[] fb=new int[10];
+          //Setting fb[0] & fb[1] to 1
           fb[0]=1;
           fb[1]=1;
+          //Making value at i equals sum of past 2 values
           for (int i=2; i<10; i++)
             fb[i]=fb[i-1]+fb[i-2];
+          //Printing
           for (int i=0; i<10; i++)
-            System.out.println(fb[i]);
+            System.out.println("fb["+i+"] = "+fb[i]);
         }    
 }
