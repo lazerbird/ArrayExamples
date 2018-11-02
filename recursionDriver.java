@@ -2,7 +2,7 @@ public class recursionDriver
 {
      public static int count(int n)
     {
-        return 2+count(n-1);
+        return 4*count(n);
     }
     
     public static void main(String[] args)
@@ -25,6 +25,8 @@ public class recursionDriver
          System.out.println(counted);
          
          //Task 2
+         
+         //Task 3
 
     }
 }
