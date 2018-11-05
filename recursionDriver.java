@@ -10,9 +10,26 @@ public class recursionDriver
     {
         if(n<1)
         return 0;
-        return 4 + task2(n-1);
+        return 20 + task2(n-1);
     }
-    
+    public static int task3(int n)
+    {
+        if(n<1)
+        return 0;
+        return 10 + task3(n-1);
+    }
+    public static int task4(int n)
+    {
+        if(n<=0)
+        return 0;
+        return task4(n-2)+n;
+    }
+    public static int task5(int n)
+    {
+        if(n<=0)
+        return 0;
+        return task4(n-2)+n;
+    }
     public static void main(String[] args)
     {
          /*
@@ -29,12 +46,22 @@ public class recursionDriver
          int counted=0;
 
          // Task 1.
-         counted = task1(10);
-         System.out.println(counted);
+         System.out.println(task1(10));
          
          //Task 2
+         System.out.println(task2(12));
          
          //Task 3
-
+         System.out.println(task3(8));
+         
+         //Task 4
+         int counter1 = 0;
+         counter1 = task4(5) + counter1;
+         System.out.println(counter1);
+         
+         //Task 5
+         int counter2 = 0;
+         counter1 = task5(6) + counter2;
+         System.out.println(counter2);
     }
 }
