@@ -1,8 +1,16 @@
 public class recursionDriver
 {
-     public static int count(int n)
+     public static int task1(int n)
     {
-        return 4*count(n);
+        if(n<1)
+        return 0;
+        return 4 + task1(n-1);
+    }
+    public static int task2(int n)
+    {
+        if(n<1)
+        return 0;
+        return 4 + task2(n-1);
     }
     
     public static void main(String[] args)
@@ -21,7 +29,7 @@ public class recursionDriver
          int counted=0;
 
          // Task 1.
-         counted = count(10);
+         counted = task1(10);
          System.out.println(counted);
          
          //Task 2

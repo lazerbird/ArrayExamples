@@ -1,7 +1,9 @@
 #BlueJ class context
 comment0.target=recursionDriver
 comment1.params=n
-comment1.target=int\ count(int)
-comment2.params=args
-comment2.target=void\ main(java.lang.String[])
-numComments=3
+comment1.target=int\ task1(int)
+comment2.params=n
+comment2.target=int\ task2(int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
