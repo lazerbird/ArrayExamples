@@ -28,7 +28,7 @@ public class recursionDriver
     {
         if(n<=0)
         return 0;
-        return task4(n-2)+n;
+        return task5(n-2)+n;
     }
     public static void main(String[] args)
     {
@@ -46,22 +46,22 @@ public class recursionDriver
          int counted=0;
 
          // Task 1.
-         System.out.println(task1(10));
+         System.out.println("Task 1\n" + task1(10));
          
          //Task 2
-         System.out.println(task2(12));
+         System.out.println("Task 2\n" +task2(12));
          
          //Task 3
-         System.out.println(task3(8));
+         System.out.println("Task 3\n" +task3(8));
          
          //Task 4
          int counter1 = 0;
          counter1 = task4(5) + counter1;
-         System.out.println(counter1);
+         System.out.println("Task 4\n" + counter1);
          
          //Task 5
          int counter2 = 0;
-         counter1 = task5(6) + counter2;
-         System.out.println(counter2);
+         counter2 = task5(6) + counter2;
+         System.out.println("Task 5\n" +counter2);
     }
 }
